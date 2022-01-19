@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+/* -----------------------
+     Universal Selector
+------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  max-width: 71em;
+  margin: 0 auto;
+}
+
+/* ----------------------------------
+      Header Styling start here
+----------------------------------- */
+
+header {
+  display: flex;
+
+  margin: 0.5em auto 0em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar a {
+  text-decoration: none;
+  padding: 1em 1em;
+  margin: 0.5em 0.5em;
+  color: black;
+}
+
+.nav-icon {
+  height: 2.2em;
+  width: 2.2em;
+}
+
+/* ---------------------------------------------------------
+            Feature Product Styling start from here.
+--------------------------------------------------------- */
+
+.feature-product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.5em auto 4em;
+  justify-content: space-between;
+  column-gap: 7em;
+  padding: 1em;
+  backface-visibility: hidden;
+}
+
+.product-details-headline {
+  font-size: 3em;
+  line-height: 1.3em;
+  margin: 0.5em 0;
+  animation: prdLeftIn 1.5s ease-in 0s 1;
+}
+
+.special-text {
+  color: #e84118;
+  font-family: "Lora", serif;
+}
+
+.flagship-product-description {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5em;
+  animation: pdRightIn 1.5s ease-in 0s 1;
+}
+
+.flagship-img {
+  width: 70%;
+  border-radius: 6em;
+  animation: flagImage 1.5s ease-in 0.9s backwards;
+}
+
+.flagship-img:hover {
+  transform: scale(1.2);
+  transition: all ease-in 1s;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.7em 1.9em;
+  margin: 3em 0 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e84118;
+  border-radius: 2em;
+  font-weight: 700;
+  transition: all 0.2s linear;
+  animation: btnBookNow 0.9s ease-in 2.2s 1 backwards;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0.2em 0.3em 0.4em #e84118;
+}
+
+.btn:active {
+  transform: scale(1.1);
+  box-shadow: 0em 0.1em 0.4em #e84118;
+}
+
+@keyframes prdLeftIn {
+  0% {
+    transform: translate(-2em);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(1em) skewX(-15deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0em);
+    opacity: 1;
+  }
+}
+
+@keyframes pdRightIn {
+  0% {
+    transform: translate(-2em);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translate(1em);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0em);
+    opacity: 1;
+  }
+}
+
+@keyframes btnBookNow {
+  0% {
+    transform: translateY(3em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0em);
+    opacity: 1;
+  }
+}
+
+@keyframes flagImage {
+  0% {
+    transform: translateY(-3em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0em);
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------
+            Feature Product Styling Ends Here!
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+            Vendor section Styling Begins Here!
+--------------------------------------------------------- */
+.our-vendors {
+  display: flex;
+  gap: 1.2em;
+  margin: 1.5em auto 0em;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  animation: vendors 1.5s ease-in;
+}
+
+@keyframes vendors {
+  0% {
+    transform: scale(0.5em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1em);
+    opacity: 1;
+  }
+}
+/* ---------------------------------------------------------
+            Vendor section Styling Ends Here!
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+            Product Busket section Styling Ends Here!
+--------------------------------------------------------- */
+.product-busket {
+  margin: 1.5em auto 0.5em;
+}
+
+.section-title {
+  text-align: center;
+  padding: 1em;
+  margin: 0.5em 0;
+  font-size: 2em;
+  color: #e84118;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.product {
+  box-shadow: 0.4em 0.4em 0.8em silver;
+  border-radius: 0.4em;
+  padding: 1em;
+}
+.product-image {
+  width: 100%;
+}
+.product-description {
+  padding: 0.5em;
+  line-height: 1.5em;
+}
+
+.product-price {
+  margin-bottom: 1em;
+}
+
+.half,
+.gold {
+  color: rgb(255, 200, 0);
+}
+
+.shipping-policy,
+.availability {
+  color: grey;
+}
+
+.more-products {
+  margin: 0.1em auto;
+}
+
+.more-products-anchor {
+  gap: 0.5em;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  color: #e84118;
+  font-weight: 900;
+  align-items: center;
+  padding: 0 2em;
+  gap: 0.5em;
+}
+/* ---------------------------------------------------------
+             Product Busket Styling Ends Here!
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+             Customer Reviews Styling Starts Here!
+--------------------------------------------------------- */
+.customer-reviews {
+  display: flex;
+  margin: 2em auto;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.2em 0.4em silver;
+}
+.customer-review {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.client-image {
+  width: 10em;
+  border-radius: 50%;
+}
+
+.reviewer {
+  text-decoration: none;
+  color: rgb(37, 36, 36);
+}
+/* ---------------------------------------------------------
+             Customer Reviews Styling Ends Here!
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+             Footer Styling Starts Here!
+--------------------------------------------------------- */
+
+footer {
+  background-color: rgb(128, 128, 128);
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 1em;
+}
+
+.fab {
+  color: #fff;
+  padding: 0.1em;
+}
+
+/* ---------------------------------------------------------
+             Footer Styling Ends Here!
+--------------------------------------------------------- */ ;

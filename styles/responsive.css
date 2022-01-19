@@ -1,0 +1,134 @@
+@media only screen and (max-width: 688px) {
+  body {
+    background-color: #f3f1ff;
+  }
+
+  /* ----------------------------------
+      Header Styling starts here
+----------------------------------- */
+  .menu-bar {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+  /* ----------------------------------
+      Header Styling Ends here
+----------------------------------- */
+
+  /* ---------------------------------------------------------
+            Feature Product Styling start from here.
+--------------------------------------------------------- */
+  .feature-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-details-headline {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .flagship-product-description {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 1em;
+    padding: 0.4em 1em;
+    font-weight: 400;
+    text-align: center;
+  }
+  /* ---------------------------------------------------------
+            Feature Product Styling Ends Here!
+--------------------------------------------------------- */
+
+  /* ---------------------------------------------------------
+            Vendor section Styling Begins Here!
+--------------------------------------------------------- */
+  .our-vendors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---------------------------------------------------------
+            Vendor section Styling Ends Here!
+--------------------------------------------------------- */
+
+  /* ---------------------------------------------------------
+            Product Busket section Styling Ends Here!
+--------------------------------------------------------- */
+
+  .section-title {
+    text-align: left;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  /* ---------------------------------------------------------
+             Customer Reviews Styling Starts Here!
+--------------------------------------------------------- */
+  .customer-reviews {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ---------------------------------------------------------
+             Customer Reviews Styling Starts Here!
+--------------------------------------------------------- */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Menu Bar */
+  .menu-bar a {
+    padding: 0.2rem;
+  }
+
+  /* Feature Product */
+
+  .feature-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .product-details {
+    text-align: center;
+  }
+
+  /* Vendors Section */
+
+  .our-vendors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    justify-items: end;
+  }
+
+  /* Product Busket */
+  .section-title {
+    text-align: center;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  /* Customer review */
+  .customer-reviews {
+    padding: 2rem;
+  }
+}
