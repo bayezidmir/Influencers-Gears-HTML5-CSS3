@@ -80,7 +80,7 @@ header {
 }
 
 .flagship-img {
-  width: 70%;
+  width: 100%;
   border-radius: 6em;
   animation: flagImage 1.5s ease-in 0.9s backwards;
 }
